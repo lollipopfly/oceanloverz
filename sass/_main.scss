@@ -57,12 +57,15 @@ $red_light: #f6ac8d;
 $red_super_ligh: #edc0ae;
 $blue: #81a1c2;
 // $blue_bold: #0f416f;
+$blue_super_bold: #17172c;
 $green: #4e8760;
 $purple: #77769a;
 $brown: #926e58;
 
 // font
 $bariol: 'Bariol';
+
+$btn_hover_percent: 85%;
 
 /**
 * ----------------------------------------------------------------------------------------------------
@@ -107,6 +110,7 @@ $bariol: 'Bariol';
 	display: inline-block;
 }
 
+
 html {
 	font-size: 16px;
 }
@@ -148,22 +152,13 @@ a {
 	}
 }
 
-h2 {
-	color:red;
-}
-
-h3 {
-	color:red;
-}
-
 input[type=text],
 input[type=email],
 input[type=tel],
 textarea {
-	border: #e3e3e3;
+	border: none;
 	outline: none;
-	height: 40px;
-	padding-left: 10px;
+	padding-left: 9px;
 }
 
 textarea {
@@ -178,16 +173,69 @@ textarea {
 */
 
 .btn {
+	font-size: 12px;
 	display: inline-block;
-	padding: 9px 20px;
 	text-transform: uppercase;
 	color: $white;
+	transition: background .3s;
+	padding: 7px 14px;
 
 	&:--hoverous {
 		text-decoration: none;
 		color: $white;
-		transition: .4s color;
-		transition: .3s background;
+	}
+}
+
+.btn-large {
+	padding: 11px 19px;
+	font-size: 18px;
+}
+
+.btn-redlight {
+	background: $red_light;
+
+	&:--hoverous {
+		background: color($red_light a($btn_hover_percent));
+	}
+}
+
+.btn-blue {
+	background: $blue;
+
+	&:--hoverous {
+		background: color($blue a($btn_hover_percent));
+	}
+}
+
+.btn-brown {
+	background: $brown;
+
+	&:--hoverous {
+		background: color($brown a($btn_hover_percent));
+	}
+}
+
+.btn-green {
+	background: $green;
+
+	&:--hoverous {
+		background: color($green a($btn_hover_percent));
+	}
+}
+
+.btn-purple {
+	background: $purple;
+
+	&:--hoverous {
+		background: color($purple a($btn_hover_percent));
+	}
+}
+
+.btn-blue-super-bold {
+	background: $blue_super_bold;
+
+	&:--hoverous {
+		background: color($blue_super_bold a($btn_hover_percent));
 	}
 }
 

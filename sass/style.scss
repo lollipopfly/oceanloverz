@@ -91,6 +91,9 @@
 /*------------------------------------*\
     Slider
 \*------------------------------------*/
+.slick-slider {
+	margin-bottom: 0;
+}
 .slider {
 	position: relative;
 
@@ -129,10 +132,11 @@
 
 .slider__desc {
 	position: absolute;
-	bottom: 300px;
+	bottom: 15%;
 	left: 50%;
 	width: 618px;
 	text-align: center;
+	margin-left: -309px;
 }
 
 .slider__desc-text,
@@ -155,18 +159,15 @@
 }
 
 .slider__shop {
+	padding: 13px 20px 13px 54px;
 	position: absolute;
 	top: 74px;
 	right: 0;
 	background: $red_super_ligh;
 	font-size: 15px;
-	text-transform: uppercase;
-	color: $white;
-	padding: 13px 20px 13px 54px;
 
-	&:hover {
-		color: $white;
-		background: color($red, lightness(10%));
+	&:--hoverous {
+		background: color($red a(95%));
 	}
 
 	.busket-white {
@@ -176,3 +177,199 @@
 		left: 19px;
 	}
 }
+
+/**
+***************************************************************
+* =Home
+***************************************************************
+**/
+
+.home-box {
+	text-align: center;
+	position: relative;
+}
+
+.home-box-inner {
+	min-width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+.home-inst,
+.home-subscribe,
+.home-insights,
+.home-products,
+.home-about,
+.home-contact {
+	float: left;
+	overflow: hidden;
+	background-size: cover !important;
+	backround-position: center;
+}
+
+.home-inst,
+.home-subscribe {
+	height: 374px;
+}
+
+// instagram
+.home-inst {
+	width: 50%;
+	background: url('../images/home-instagram.jpg') no-repeat;
+
+	.home-box-inner {
+		a:first-child {
+			padding: 11px 31px;
+			font-size: 18px;
+			margin-bottom: 36px;
+		}
+	}
+}
+
+// subscribe
+.home-subscribe {
+	width: 50%;
+	background: url('../images/home-subscribe.jpg') no-repeat;
+
+	.home-box-inner {
+		h2 {
+			display: inline-block;
+			background: $yellow;
+			color: $white;
+			font-size: 18px;
+			padding: 12px 18px;
+			text-transform: uppercase;
+		}
+
+		h2:first-child {
+			margin-bottom: 13px;
+		}
+
+		h2:nth-child(2) {
+			margin-bottom: 27px;
+		}
+	}
+
+	.subscribe {
+		display: inline-block;
+
+		input[type=text],
+		input[type=email] {
+			// float: left;
+			width: 170px;
+			margin-right: 14px;
+			padding: 7px 9px;
+			background: rgba($white, .9);
+			font-size: 15px;
+			color: #838383;
+			font-family: $bariol;
+
+			&::-webkit-input-placeholder
+			{
+			  color: #838383;
+			  font-family: $bariol;
+			}
+
+			&:-moz-placeholder
+			{
+			  color: #838383;
+			  font-family: $bariol;
+			}
+
+			&::-moz-placeholder
+			{
+			  color: #838383;
+			  font-family: $bariol;
+			}
+			&:-ms-input-placeholder
+			{
+			  color: #838383;
+			  font-family: $bariol;
+			}
+		}
+
+		input[type=email] {
+			margin-right: 0;
+		}
+
+		input[type=submit] {
+			border: none;
+			outline: none;
+			font-size: 12px;
+			// padding: 7px 14px;
+		}
+	}
+}
+
+
+.subscribe-field-container {
+	margin-bottom: 32px;
+}
+
+// insights
+.home-insights,
+.home-products {
+	min-height: 545px;
+}
+
+.home-insights {
+	width: 40%;
+	background: url('../images/home-insights.jpg') no-repeat;
+
+	a {
+		padding: 11px 19px;
+	}
+}
+
+// products
+.home-products {
+	width: 60%;
+	background: url('../images/home-products.jpg') no-repeat;
+
+	a:first-child {
+		margin-bottom: 28px;
+	}
+}
+
+
+.home-about,
+.home-contact {
+	min-height: 411px;
+}
+// about
+.home-about {
+	width: 50%;
+	background: url('../images/home-about.jpg') no-repeat;
+}
+
+// about
+.home-contact {
+	width: 50%;
+	background: url('../images/home-contact.jpg') no-repeat;
+}
+
+/**
+***************************************************************
+* =Footer
+***************************************************************
+**/
+
+.footer {
+	position: relative;
+}
+
+.copyright {
+	display: block;
+	text-align: center;
+	font-size: 11px;
+	color: #838383;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+

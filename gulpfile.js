@@ -4,6 +4,7 @@ var gulp         = require('gulp'),
 	sass         = require('gulp-sass'),
 	size         = require('postcss-size'),
 	pxtorem      = require('postcss-pxtorem'),
+	colorFunction = require("postcss-color-function"),
 	autoprefixer = require('autoprefixer'),
 	concat       = require('gulp-concat'),
 	uglify       = require('gulp-uglify'),
@@ -22,6 +23,7 @@ gulp.task('sass', function() {
 	autoprefixer({ browsers: ['last 20 versions'] }),
 		selectors,
 		size,
+		colorFunction,
 		pxtorem({
 			replace: true
 		})
@@ -99,7 +101,8 @@ gulp.task('serve', ['sass'], function() {
 	'port': 3000
 	});
 
-	gulp.watch("js/build/*.js", { interval: 500 }, ['compress']);
+	// gulp.watch("js/build/*.js", { interval: 500 }, ['compress']);
+	gulp.watch("js/build/*.js").on('change', browserSync.reload);
 	gulp.watch("css/style.css").on('change', browserSync.reload);
 	gulp.watch("index.html").on('change', browserSync.reload);
 });
