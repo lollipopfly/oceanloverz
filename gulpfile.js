@@ -30,7 +30,7 @@ gulp.task('sass', function() {
   return gulp.src([
   		  'css/bootstrap.min.css',
 		  'sass/_main.scss',
-		  'css/sprite.css',
+		  'css/_sprite.css',
 		  'node_modules/slick-carousel/slick/slick.css',
 		  'node_modules/slick-carousel/slick/slick-theme.css',
 		  'sass/style.scss',])
@@ -49,7 +49,7 @@ gulp.task('sass', function() {
 gulp.task('sprite', function () {
   var spriteData = gulp.src('images/main/*.png').pipe(spritesmith({
 	imgName: 'sprite.png',
-	cssName: 'sprite.css',
+	cssName: '_sprite.css',
 	imgPath: '../images/sprite.png',
 	padding: 1,
 	cssOpts: {
@@ -111,7 +111,7 @@ gulp.task('serve', ['sass'], function() {
 gulp.task('watch', function() {
 	gulp.watch('sass/**/*.scss', { interval: 500 }, ['sass', 'notify']);
 	gulp.watch('js/common.js', { interval: 500 }, ['compress', 'notify']);
-  // gulp.watch('images/main/*.png', { interval: 500 }, ['sprite']);
+	gulp.watch('images/main/*.png', { interval: 500 }, ['sprite']);
 });
 
 /*------------------------------------*\
@@ -128,7 +128,7 @@ gulp.task('notify', function(a) {
 	Run default gulp tasks
 \*------------------------------------*/
 
-gulp.task('default', ['sass', 'compress', 'watch']);
+gulp.task('default', ['sass', 'sprite', 'compress', 'watch']);
 
 
 /**

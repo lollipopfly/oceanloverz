@@ -49,7 +49,19 @@ table {
 
 $white: #fff;
 $black: #000;
+$black_light: #494949;
 $gray: #e3e3e3;
+$yellow: #f7d140;
+$red: #a15b47;
+$red_light: #f6ac8d;
+$red_super_ligh: #edc0ae;
+$blue: #81a1c2;
+// $blue_bold: #0f416f;
+$green: #4e8760;
+$purple: #77769a;
+$brown: #926e58;
+
+// font
 $bariol: 'Bariol';
 
 /**
@@ -95,9 +107,15 @@ $bariol: 'Bariol';
 	display: inline-block;
 }
 
+html {
+	font-size: 16px;
+}
+
 body {
 	font-family: $bariol;
+	background: $white;
 }
+
 // Stcky Footer
 html, body {
 	height: 100%;
@@ -105,7 +123,7 @@ html, body {
 
 .wrap {
 	min-height: 100%;
-	margin-bottom: -142px;
+	margin-bottom: -22px;
 }
 
 .wrap:after {
@@ -114,7 +132,7 @@ html, body {
 }
 
 .footer, .wrap:after {
-	height: 142px;
+	height: 22px;
 }
 
 img {
@@ -123,11 +141,10 @@ img {
 }
 
 a {
-	color:red;
 	outline: none !important; // for firefox
 
 	&:--hoverous {
-			color: $black;
+		text-decoration: none;
 	}
 }
 
@@ -163,13 +180,11 @@ textarea {
 .btn {
 	display: inline-block;
 	padding: 9px 20px;
-	color: $black;
-	border: 1px solid $black;
 	text-transform: uppercase;
+	color: $white;
 
 	&:--hoverous {
 		text-decoration: none;
-		background: $gray;
 		color: $white;
 		transition: .4s color;
 		transition: .3s background;
@@ -186,6 +201,10 @@ textarea {
 
 .navbar-default {
 	background: none;
+}
+
+.nav>li>a {
+	padding: 0;
 }
 
 

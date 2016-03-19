@@ -10,9 +10,9 @@ $(document).ready(function() {
 	// var screenWidth = $(document).width() + scrollWidth();
 
 	// SLICK CAROUSEL
-	// $('.slider').slick({
-	// 	dots: true,
-	// });
+	$('.slider-list').slick({
+		dots: true,
+	});
 
 
 /**

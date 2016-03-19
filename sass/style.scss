@@ -1,0 +1,178 @@
+/*------------------------------------*\
+    Header
+\*------------------------------------*/
+
+.header-top {
+	background: $blue;
+	text-align: center;
+	padding: 11px 0;
+}
+
+.header-top__link {
+	position: relative;
+	color: $white;
+	text-transform: uppercase;
+	font-size: 13px;
+
+	&:hover {
+		color: $white;
+	}
+
+	.header-top-arr {
+		display: inline-block;
+
+	}
+}
+
+/* Main nav */
+.nav-container {
+	padding-top: 18px;
+	text-align: center;
+}
+
+.logo {
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.main-nav {
+
+}
+
+.navbar-nav>li {
+	margin-right: 60px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.navbar-default .navbar-nav>li>a {
+	color: $black_light;
+}
+.nav>li>a {
+	font-size: 14px;
+	text-transform: uppercase;
+	transition: color .2s
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+	color: $blue;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+	background: none;
+	color: $blue;
+}
+
+/* social */
+.social {
+	padding-top: 10px;
+}
+
+.social__item {
+	float: left;
+	margin-right: 15px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.social__link {
+	span {
+		display: inline-block;
+	}
+}
+
+/*------------------------------------*\
+    Slider
+\*------------------------------------*/
+.slider {
+	position: relative;
+
+	.slick-dots {
+		bottom: 33px;
+		right: 38px;
+		display: inline-block !important;
+		width: auto;
+
+		li {
+			button {
+				background: #f6d8cc;
+				border-radius: 50%;
+				size: 16px;
+
+				&:before {
+					content: none;
+				}
+			}
+		}
+
+		.slick-active {
+			button {
+				border: 5px solid #393939;
+			}
+		}
+	}
+}
+
+.slider__item {
+	position: relative;
+	img {
+		width: 100%;
+	}
+}
+
+.slider__desc {
+	position: absolute;
+	bottom: 300px;
+	left: 50%;
+	width: 618px;
+	text-align: center;
+}
+
+.slider__desc-text,
+.slider__desc-author {
+	padding: 11px 24px;
+	background: $red;
+	color: $white;
+	font-size: 18px;
+	display: inline-block;
+}
+
+.slider__desc-text {
+	margin-bottom: 25px;
+	clear: both;
+}
+
+.slider__desc-author {
+	padding: 12px 26px;
+	text-transform: uppercase;
+}
+
+.slider__shop {
+	position: absolute;
+	top: 74px;
+	right: 0;
+	background: $red_super_ligh;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: $white;
+	padding: 13px 20px 13px 54px;
+
+	&:hover {
+		color: $white;
+		background: color($red, lightness(10%));
+	}
+
+	.busket-white {
+		position: absolute;
+		top: 50%;
+		margin-top: -9px;
+		left: 19px;
+	}
+}
