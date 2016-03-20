@@ -22,6 +22,70 @@ $(document).ready(function() {
 ***************************************************************
 **/
 
+/* Burger-button */
+
+$('.navbar-toggle').on('click', function() {
+	$this = $(this);
+
+	if ($this.hasClass('collapsed')) {
+		$('.icon-bar.two-icon').stop().animate({
+			opacity: 0
+		}, 100);
+
+		$('.icon-bar.one-icon').stop().animate({
+			top: "10",
+			rotation: -45
+		}, {
+			step: function(now, fx) {
+				$(this).css('-webkit-transform', 'rotate(' + now + 'deg)')
+					.css('-moz-transform', 'rotate(' + now + 'deg)')
+					.css('transform', 'rotate(' + now + 'deg)');
+			},
+			duration: 300
+		}, 'linear');
+
+		$('.icon-bar.three-icon').stop().animate({
+			top: "-6",
+			rotation: 45
+		}, {
+			step: function(now, fx) {
+				$(this).css('-webkit-transform', 'rotate(' + now + 'deg)')
+					.css('-moz-transform', 'rotate(' + now + 'deg)')
+					.css('transform', 'rotate(' + now + 'deg)');
+			},
+			duration: 300
+		}, 'linear');
+	} else {
+		$('.icon-bar.two-icon').stop().animate({
+			opacity: 1
+		}, 300);
+
+		$('.icon-bar.three-icon').stop().animate({
+			top: '0px',
+			rotation: 0
+		}, {
+			step: function(now, fx) {
+				$(this).css('-webkit-transform', 'rotate(' + now + 'deg)')
+					.css('-moz-transform', 'rotate(' + now + 'deg)')
+					.css('transform', 'rotate(' + now + 'deg)');
+			},
+			duration: 300
+		}, 'linear');
+
+		$('.icon-bar.one-icon').stop().animate({
+			top: '0px',
+			rotation: 0
+		}, {
+			step: function(now, fx) {
+				$(this).css('-webkit-transform', 'rotate(' + now + 'deg)')
+					.css('-moz-transform', 'rotate(' + now + 'deg)')
+					.css('transform', 'rotate(' + now + 'deg)');
+			},
+			duration: 300
+		}, 'linear');
+	}
+});
+
 
 /**
 ***************************************************************
