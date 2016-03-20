@@ -33,7 +33,7 @@ $('.navbar-toggle').on('click', function() {
 		}, 100);
 
 		$('.icon-bar.one-icon').stop().animate({
-			top: "10",
+			top: "11",
 			rotation: -45
 		}, {
 			step: function(now, fx) {
@@ -45,7 +45,7 @@ $('.navbar-toggle').on('click', function() {
 		}, 'linear');
 
 		$('.icon-bar.three-icon').stop().animate({
-			top: "-6",
+			top: "-7",
 			rotation: 45
 		}, {
 			step: function(now, fx) {
