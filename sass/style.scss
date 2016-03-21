@@ -236,12 +236,12 @@
 	float: left;
 	overflow: hidden;
 	background-size: cover !important;
-	backround-position: center;
+	background-position: center;
 }
 
 .home-inst,
 .home-subscribe {
-	height: 374px;
+	min-height: 373px;
 }
 
 // instagram
@@ -281,8 +281,9 @@
 			margin-bottom: 27px;
 		}
 	}
+}
 
-	.subscribe {
+.subscribe {
 		display: inline-block;
 
 		input[type=text],
@@ -329,8 +330,6 @@
 			font-size: 12px;
 		}
 	}
-}
-
 
 .subscribe-field-container {
 	margin-bottom: 32px;
@@ -339,7 +338,7 @@
 // insights
 .home-insights,
 .home-products {
-	min-height: 545px;
+	min-height: 536px;
 }
 
 .home-insights {
@@ -364,8 +363,9 @@
 
 .home-about,
 .home-contact {
-	min-height: 411px;
+	min-height: 410px;
 }
+
 // about
 .home-about {
 	width: 50%;
@@ -405,7 +405,7 @@
 
 @media screen and (min-width: 1200px) {
 	.container {
-	    width: 1200px;
+	    width: 1190px;
 	}
 }
 
@@ -447,6 +447,29 @@
 		top: -41px;
 	}
 
+	/*------------------------------------*\
+	    home
+	\*------------------------------------*/
+	.home-box {
+		width: 100%;
+		float: none;
+	}
+
+	.home-inst,
+	.home-subscribe {
+		min-height: 333px;
+	}
+
+	.home-insights,
+	.home-products {
+		min-height: 336px;
+	}
+
+	.home-about,
+	.home-contact {
+		min-height: 310px;
+	}
+
 }
 
 @media screen and (max-width: 550px) {
@@ -482,5 +505,56 @@
 			left: 12px;
 		}
 	}
+
+	/*------------------------------------*\
+	    Home
+	\*------------------------------------*/
+	.home-subscribe .home-box-inner h2 {
+		font-size: 16px;
+		padding: 8px 10px;
+	}
+
+	.subscribe {
+
+		input[type=text],
+		input[type=email] {
+			background: rgba($white, 1);
+		}
+
+		input[type=submit] {
+			font-size: 14px;
+		}
+	}
+
+	.home-products {
+		.btn {
+			font-size: 14px;
+		}
+	}
 }
 
+@media screen and (max-width: 400px) {
+	/*------------------------------------*\
+	    Home
+	\*------------------------------------*/
+
+	.home-subscribe .home-box-inner h2 {
+		font-size: 13px;
+	}
+
+	.subscribe {
+		input[type=text],
+		input[type=email] {
+			margin-right: 0;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+
+		input[type=email] {
+			margin-bottom: 0;
+		}
+		input[type=submit] {
+			font-size: 14px;
+		}
+	}
+}
