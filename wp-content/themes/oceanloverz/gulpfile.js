@@ -30,7 +30,6 @@ gulp.task('sass', function() {
 ];
 
   return gulp.src([
-  		  // 'css/bootstrap.min.css',
 		  'sass/_main.scss',
 		  'css/_sprite.css',
 		  'node_modules/slick-carousel/slick/slick.css',
