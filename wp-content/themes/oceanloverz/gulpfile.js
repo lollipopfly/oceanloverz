@@ -30,7 +30,7 @@ gulp.task('sass', function() {
 ];
 
   return gulp.src([
-  		  'css/bootstrap.min.css',
+  		  // 'css/bootstrap.min.css',
 		  'sass/_main.scss',
 		  'css/_sprite.css',
 		  'node_modules/slick-carousel/slick/slick.css',
@@ -80,7 +80,6 @@ gulp.task('sprite', function () {
 gulp.task('compress', function() {
 	return gulp.src([
 					'js/libs/jquery.js',
-					'js/libs/bootstrap.min.js',
 					'node_modules/slick-carousel/slick/slick.min.js',
 					'js/common.js'])
 		.pipe(plumber())

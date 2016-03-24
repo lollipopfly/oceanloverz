@@ -110,6 +110,10 @@ $btn_hover_percent: 85%;
 	display: inline-block;
 }
 
+.container {
+	max-width: 1204px;
+	margin: 0 auto;
+}
 
 html {
 	font-size: 16px;
@@ -146,6 +150,7 @@ img {
 
 a {
 	outline: none !important; // for firefox
+	text-decoration: none;
 
 	&:--hoverous {
 		text-decoration: none;
@@ -239,41 +244,6 @@ textarea {
 	}
 }
 
-/*------------------------------------*\
-    Boostrap menu
-\*------------------------------------*/
-
-.navbar {
-	border: none;
-}
-
-.navbar-nav {
-	float: none;
-	display: inline-block;
-}
-
-.navbar-default {
-	background: none;
-}
-
-.nav>li>a {
-	padding: 0;
-}
-
-.navbar-toggle {
-	margin-top: 0;
-	top: -66px;
-	border: none;
-}
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: transparent !important;
-}
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-	border: none;
-}
-
 /**
 * ----------------------------------------------------------------------------------------------------
 * @MEDIA
@@ -284,80 +254,6 @@ textarea {
 	body {
 		width: 320px;
 	}
-}
-
-/**
-* ----------------------------------------------------------------------------------------------------
-* COMPONENTS
-* ----------------------------------------------------------------------------------------------------
-*/
-
-/*------------------------------------*\
-    Modal
-\*------------------------------------*/
-
-.modal-body {
-	overflow: hidden;
-}
-
-.modal__title {
-	font-weight: bold;
-	font-size: 22px;
-	text-align: center;
-}
-
-.modal__close {
-	float: right;
-	font-size: 22px;
-	cursor: pointer;
-}
-
-.modal__label {
-	margin-bottom: 5px;
-
-	span {
-		color: red;
-	}
-}
-
-.modal__important span {
-	color: red;
-}
-
-.modal__error {
-	color: red;
-}
-
-.captcha__desc {
-	text-align: center;
-	margin-bottom: 10px;
-}
-
-.captcha-img-container {
-	float: left;
-	width: 48%;
-}
-
-.captcha__refresh {
-	display: block;
-}
-
-.captcha__input {
-	float: right;
-	width: 38%;
-}
-
-.modal-footer {
-	border: none;
-}
-
-/* Confirm */
-.modal-confirm .modal-body {
-	text-align: center;
-}
-
-.modal-confirm__message {
-	margin-bottom: 10px;
 }
 
 

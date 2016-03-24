@@ -11,8 +11,10 @@ $(document).ready(function() {
 	// SLICK CAROUSEL
 	$('.slider-list').slick({
 		dots: true,
-		fade: true,
-		speed: 1000
+		// fade: true,
+		speed: 800,
+		autoplay: true,
+		autoplaySpeed: 7000,
 	});
 
 
@@ -23,16 +25,23 @@ $(document).ready(function() {
 **/
 
 /* Burger-button */
+// lide up & down navigation
+$('.burger').on('click', function() {
+	$this = $(this);
+	$this.toggleClass('active');
+	$('.nav').slideToggle(300, 'linear');
+});
 
-$('.navbar-toggle').on('click', function() {
+// animation burger btn
+$('.burger').on('click', function() {
 	$this = $(this);
 
-	if ($this.hasClass('collapsed')) {
-		$('.icon-bar.two-icon').stop().animate({
+	if ($this.hasClass('active')) {
+		$('.burger__row.two-icon').stop().animate({
 			opacity: 0
 		}, 100);
 
-		$('.icon-bar.one-icon').stop().animate({
+		$('.burger__row.one-icon').stop().animate({
 			top: "11",
 			rotation: -45
 		}, {
@@ -44,7 +53,7 @@ $('.navbar-toggle').on('click', function() {
 			duration: 300
 		}, 'linear');
 
-		$('.icon-bar.three-icon').stop().animate({
+		$('.burger__row.three-icon').stop().animate({
 			top: "-7",
 			rotation: 45
 		}, {
@@ -56,11 +65,11 @@ $('.navbar-toggle').on('click', function() {
 			duration: 300
 		}, 'linear');
 	} else {
-		$('.icon-bar.two-icon').stop().animate({
+		$('.burger__row.two-icon').stop().animate({
 			opacity: 1
 		}, 300);
 
-		$('.icon-bar.three-icon').stop().animate({
+		$('.burger__row.three-icon').stop().animate({
 			top: '0px',
 			rotation: 0
 		}, {
@@ -72,7 +81,7 @@ $('.navbar-toggle').on('click', function() {
 			duration: 300
 		}, 'linear');
 
-		$('.icon-bar.one-icon').stop().animate({
+		$('.burger__row.one-icon').stop().animate({
 			top: '0px',
 			rotation: 0
 		}, {

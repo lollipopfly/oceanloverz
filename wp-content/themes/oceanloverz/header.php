@@ -28,38 +28,21 @@
 					<div class="header-bottom-row">
 						<div class="nav-container">
 							<a href="/" class="logo"></a>
-							<nav class="main-nav navbar navbar-default">
-							  <div class="container-fluid">
-							    <div class="navbar-header">
-							      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							        <span class="sr-only">Toggle navigation</span>
-							        <span class="icon-bar one-icon"></span>
-							        <span class="icon-bar two-icon"></span>
-							        <span class="icon-bar three-icon"></span>
-							      </button>
-							    </div>
+							<button class="burger">
+								<span class="burger__row one-icon"></span>
+								<span class="burger__row two-icon"></span>
+								<span class="burger__row three-icon"></span>
+							</button>
 
-							    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							      <!-- <ul class="nav navbar-nav">
-							        <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
-							        <li><a href="#">Products</a></li>
-							        <li><a href="#">Insights</a></li>
-							        <li><a href="#">About</a></li>
-							        <li><a href="#">Contact</a></li>
-							      </ul> -->
-									<?
-									$menu_args = array(
-										'menu'            => 'main',
-										'container'       => false,
-										'menu_class'      => 'nav navbar-nav',
-										// 'fallback_cb'     => 'wp_page_menu',
-										// 'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-									);
-								wp_nav_menu($menu_args);
-								?>
-							    </div><!-- /.navbar-collapse -->
-							  </div><!-- /.container-fluid -->
-							</nav>
+							<!-- Main navigation -->
+							<?
+							$menu_args = array(
+								'menu'            => 'main',
+								'container'       => false,
+								'menu_class'      => 'nav',
+							);
+							wp_nav_menu($menu_args);
+							?>
 						</div>
 
 						<div class="social">
@@ -82,17 +65,9 @@
 			<ul class="slider-list">
 				<li class="slider__item">
 					<img src="<?php bloginfo('template_url');?>/images/slide.jpg" alt="slide1">
-					<!-- <div class="slider__desc">
-						<p class="slider__desc-text">“The sea, once it casts its spell, holds one in its net of wonder forever.“</p>
-						<span class="slider__desc-author">Jacques Yves Cousteau</span>
-					</div> -->
 				</li>
 				<li class="slider__item">
 					<img src="<?php bloginfo('template_url');?>/images/slide.jpg" alt="slide1">
-					<!-- <div class="slider__desc">
-						<p class="slider__desc-text">“The sea, once it casts its spell, holds one in its net of wonder forever.“</p>
-						<span class="slider__desc-author">Jacques Yves Cousteau</span>
-					</div> -->
 				</li>
 			</ul>
 			<a href="/products/" class="btn slider__shop">
