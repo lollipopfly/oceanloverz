@@ -434,6 +434,8 @@
 	font-family: $have_heart;
 	text-align: center;
 	margin-bottom: 20px;
+	width: 62%;
+	margin: 0 auto;
 }
 
 .page__title-green {
@@ -512,6 +514,10 @@
 @media screen and (max-width: 1024px) {
 	.page-container {
 		width: 767px;
+	}
+
+	.page__title {
+		width: 100%;
 	}
 }
 
