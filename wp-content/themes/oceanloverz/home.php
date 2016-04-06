@@ -1,4 +1,21 @@
 <? get_header();?>
+			<!-- begin slider  -->
+			<div class="slider">
+				<ul class="slider-list">
+					<li class="slider__item">
+						<img src="<?php bloginfo('template_url');?>/images/slides/slide.jpg" alt="slide1">
+					</li>
+					<li class="slider__item">
+						<img src="<?php bloginfo('template_url');?>/images/slides/slide2.jpg" alt="slide2">
+					</li>
+				</ul>
+				<a href="/products/" class="btn slider__shop">
+					<span class="busket-white"></span>
+					shop now
+				</a>
+			</div>
+			<!-- end slider -->
+
 			<!-- begin home  -->
 			<div class="home">
 				<div class="home-top">

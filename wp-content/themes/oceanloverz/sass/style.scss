@@ -1,9 +1,7 @@
 /*------------------------------------*\
     Header
 \*------------------------------------*/
-body {
-	background: red;
-}
+
 .header {
 	margin-bottom: 25px;
 }
@@ -164,6 +162,8 @@ body {
 }
 
 .slider__item {
+	outline: none;
+
 	img {
 		width: 100%;
 	}
@@ -392,6 +392,98 @@ body {
 	padding: 9px 0;
 }
 
+/**
+***************************************************************
+* =PAGES
+***************************************************************
+**/
+
+.page {
+	border-bottom: 1px solid #bfbfbf;
+}
+
+.page-container {
+	width: 974px;
+	margin: 0 auto;
+	padding-bottom: 60px;
+
+	p {
+		text-align: center;
+		font-size: 14px;
+		color: #343434;
+		line-height: 23px;
+	}
+}
+
+.slide-container {
+	position: relative;
+	margin-bottom: 75px;
+}
+
+.slide-container__img {
+	width: 100%;
+}
+
+.page__title__container {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.page__title {
+	font-size: 48px;
+	font-family: $have_heart;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.page__title-green {
+	color: $green_light;
+}
+
+.page__title-purple {
+	color: #7089a3;
+}
+
+/*------------------------------------*\
+    ABOUT
+\*------------------------------------*/
+
+.about__text-top {
+	margin-bottom: 60px;
+}
+
+.about-carousel {
+	height: 385px;
+	margin-bottom: 30px;
+
+	.slick-next,
+	.slick-prev {
+		display: block !important;
+		width: 20px;
+		height: 19px;
+		z-index: 1;
+
+		&:before {
+			content: '';
+		}
+	}
+
+	.slick-next {
+		right: 107px;
+		background: url(../images/carousel_arr_next.png) no-repeat;
+	}
+
+	.slick-prev {
+		left: 107px;
+		background: url(../images/carousel_arr_prev.png) no-repeat;
+	}
+}
+
+.about-carousel__item {
+	outline: none;
+}
+
+
 
 /**
 ***************************************************************
@@ -417,6 +509,12 @@ body {
 	}
 }
 
+@media screen and (max-width: 1024px) {
+	.page-container {
+		width: 767px;
+	}
+}
+
 @media screen and (max-width: 991px) {
 	.container {
 		width: 740px;
@@ -427,6 +525,22 @@ body {
 	\*------------------------------------*/
 	.home-subscribe .home-box-inner h2 {
 		font-size: 16px !important;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.page-container {
+		width: 95%;
+	}
+
+	.about-carousel {
+		.slick-next {
+			right: 57px;
+		}
+
+		.slick-prev {
+			left: 57px;
+		}
 	}
 }
 

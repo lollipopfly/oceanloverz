@@ -59,11 +59,13 @@ $blue: #81a1c2;
 // $blue_bold: #0f416f;
 $blue_super_bold: #17172c;
 $green: #4e8760;
+$green_light: #6eb3a2;
 $purple: #77769a;
 $brown: #926e58;
 
 // font
 $bariol: 'Bariol';
+$have_heart: 'HaveHeartOne';
 
 $btn_hover_percent: 85%;
 
@@ -74,15 +76,26 @@ $btn_hover_percent: 85%;
 */
 
 @font-face {
-    font-family: $bariol;
-    src: url('../fonts/bariol_regular-webfont.eot');
-    src: url('../fonts/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/bariol_regular-webfont.woff2') format('woff2'),
-         url('../fonts/bariol_regular-webfont.woff') format('woff'),
-         url('../fonts/bariol_regular-webfont.ttf') format('truetype'),
-         url('../fonts/bariol_regular-webfont.svg#bariol_regularregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: $bariol;
+	src: url('../fonts/bariol_regular-webfont.eot');
+	src: url('../fonts/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/bariol_regular-webfont.woff2') format('woff2'),
+		url('../fonts/bariol_regular-webfont.woff') format('woff'),
+		url('../fonts/bariol_regular-webfont.ttf') format('truetype'),
+		url('../fonts/bariol_regular-webfont.svg#bariol_regularregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $have_heart;
+	src: url('../fonts/HaveHeartOne.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HaveHeartOne.otf')  format('opentype'),
+		url('../fonts/HaveHeartOne.woff') format('woff'),
+		url('../fonts/HaveHeartOne.ttf')  format('truetype'),
+		url('../fonts/HaveHeartOne.svg#HaveHeartOne') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 /**
