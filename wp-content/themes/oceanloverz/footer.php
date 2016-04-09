@@ -1,3 +1,9 @@
+			<? if(!is_home()): ?>
+					</div>
+					<!-- end page-container -->
+				</div>
+				<!-- end page -->
+			<? endif;?>
 		</div>
 		<!-- end main -->
 	</div>

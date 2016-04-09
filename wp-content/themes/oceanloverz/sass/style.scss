@@ -418,10 +418,10 @@
 .slide-container {
 	position: relative;
 	margin-bottom: 75px;
-}
 
-.slide-container__img {
-	width: 100%;
+	img {
+		width: 100%;
+	}
 }
 
 .page__title__container {

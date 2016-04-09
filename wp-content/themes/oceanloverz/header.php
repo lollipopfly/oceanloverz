@@ -62,3 +62,21 @@
 
 		<!-- begin main  -->
 		<div class="main">
+
+			<!-- PAGE TEMPLATE -->
+			<? if(!is_home()): ?>
+				<!-- begin page  -->
+				<div class="page">
+					<? if (get_the_post_thumbnail()): ?>
+						<div class="slide-container">
+							<?=get_the_post_thumbnail();?>
+							<a href="/products/" class="btn slider__shop">
+								<span class="busket-white"></span>
+								shop now
+							</a>
+						</div>
+					<? endif ?>
+
+					<!-- begin page-container  -->
+					<div class="page-container">
+			<? endif;?>
