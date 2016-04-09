@@ -52,6 +52,7 @@ gulp.task('sprite', function () {
 	imgName: 'sprite.png',
 	cssName: '_sprite.css',
 	imgPath: '../images/sprite.png',
+	algorithm: 'left-right',
 	padding: 1,
 	cssOpts: {
 	// for remove prefix icon-

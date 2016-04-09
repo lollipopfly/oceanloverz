@@ -55,6 +55,7 @@ $yellow: #f7d140;
 $red: #a15b47;
 $red_light: #f6ac8d;
 $red_super_ligh: #edc0ae;
+$red_error: #d75b5b;
 $blue: #81a1c2;
 // $blue_bold: #0f416f;
 $blue_super_bold: #17172c;
@@ -113,15 +114,15 @@ $btn_hover_percent: 85%;
 * ----------------------------------------------------------------------------------------------------
 */
 
-.clearfix:after {
-	content: "";
-	display: block;
-	height: 0;
-	line-height: 0;
-	clear: both;
-	visibility: hidden;
-	display: inline-block;
+.clearfix {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 }
+
 
 .container {
 	max-width: 1204px;
@@ -174,15 +175,43 @@ input[type=text],
 input[type=email],
 input[type=tel],
 textarea {
-	border: none;
+	box-sizing: border-box;
+	font-size: 14px;
 	outline: none;
-	padding-left: 9px;
+	padding-left: 7px;
+	border: 1px solid #d7d7d7;
 }
 
 textarea {
 	height: auto;
 }
 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder
+{
+  color: #838383;
+  font-size: 14px;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder
+{
+  color: #838383;
+  font-size: 14px;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder
+{
+  color: #838383;
+  font-size: 14px;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder
+{
+  color: #838383;
+  font-size: 14px;
+}
 
 /**
 * ----------------------------------------------------------------------------------------------------

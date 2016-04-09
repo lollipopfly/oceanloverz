@@ -18,43 +18,79 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .basket-social {
   background-image: url(../images/sprite.png);
-  background-position: -21px -56px;
+  background-position: -125px 0px;
   width: 17px;
   height: 11px;
 }
 .busket-white {
   background-image: url(../images/sprite.png);
-  background-position: 0px -56px;
+  background-position: -143px 0px;
   width: 20px;
   height: 13px;
 }
+.email {
+  background-image: url(../images/sprite.png);
+  background-position: -77px 0px;
+  width: 14px;
+  height: 11px;
+}
 .facebook {
   background-image: url(../images/sprite.png);
-  background-position: 0px -70px;
+  background-position: 0px 0px;
   width: 6px;
   height: 11px;
 }
+.facebook_red {
+  background-image: url(../images/sprite.png);
+  background-position: -7px 0px;
+  width: 8px;
+  height: 14px;
+}
 .header-top-arr {
   background-image: url(../images/sprite.png);
-  background-position: -65px -56px;
+  background-position: -26px 0px;
   width: 10px;
   height: 10px;
 }
 .instagram {
   background-image: url(../images/sprite.png);
-  background-position: -53px -56px;
+  background-position: -37px 0px;
   width: 11px;
   height: 11px;
 }
+.instagram_red {
+  background-image: url(../images/sprite.png);
+  background-position: -92px 0px;
+  width: 15px;
+  height: 14px;
+}
+.location {
+  background-image: url(../images/sprite.png);
+  background-position: -63px 0px;
+  width: 13px;
+  height: 18px;
+}
 .logo {
   background-image: url(../images/sprite.png);
-  background-position: 0px 0px;
+  background-position: -164px 0px;
   width: 220px;
   height: 55px;
 }
+.phone {
+  background-image: url(../images/sprite.png);
+  background-position: -16px 0px;
+  width: 9px;
+  height: 17px;
+}
 .twitter {
   background-image: url(../images/sprite.png);
-  background-position: -39px -56px;
+  background-position: -49px 0px;
   width: 13px;
   height: 11px;
+}
+.twitter_red {
+  background-image: url(../images/sprite.png);
+  background-position: -108px 0px;
+  width: 16px;
+  height: 13px;
 }
