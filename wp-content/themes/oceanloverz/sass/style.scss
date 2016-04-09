@@ -433,9 +433,8 @@
 	font-size: 48px;
 	font-family: $have_heart;
 	text-align: center;
-	margin-bottom: 20px;
 	width: 62%;
-	margin: 0 auto;
+	margin: 0 auto 20px;
 }
 
 .page__title-green {
@@ -444,6 +443,22 @@
 
 .page__title-purple {
 	color: #7089a3;
+}
+
+.page__title-blue {
+	color: #2d567e;
+}
+
+/*------------------------------------*\
+    PRODUCTS
+\*------------------------------------*/
+
+.coming-soon {
+	font-size: 84px;
+	color: #292929;
+	font-family: $have_heart;
+	text-align: center;
+	margin-bottom: 200px;
 }
 
 /*------------------------------------*\
