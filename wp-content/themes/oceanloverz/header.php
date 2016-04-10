@@ -18,7 +18,7 @@
 		<header class="header">
 			<!-- begin header-top  -->
 			<div class="header-top">
-				<a href="#" class="header-top__link">Join your fellow Oceanloverz and receive a monthly inspiring Oceanloverz story! <span class="header-top-arr"></span></a>
+				<a href="#" class="header-top__link">Join your fellow Oceanloverz and receive a monthly inspiring Oceanloverz story! <span class="arr_next"></span></a>
 			</div>
 			<!-- end header-top -->
 
@@ -37,9 +37,9 @@
 							<!-- Main navigation -->
 							<?
 							$menu_args = array(
-								'menu'            => 'main',
-								'container'       => false,
-								'menu_class'      => 'nav',
+								'menu'       => 'main',
+								'container'  => false,
+								'menu_class' => 'nav',
 							);
 							wp_nav_menu($menu_args);
 							?>
@@ -77,13 +77,16 @@
 					<? if (get_the_post_thumbnail() || is_category()): ?>
 						<div class="slide-container">
 							<!-- Check category page (insights) -->
-							<? if (is_category()): ?>
+							<? if (is_category('insights')): ?>
 								<?
 									$cat = get_the_category();
 									$cat_id = $cat[0]->cat_ID;
 									$cat_img_src = get_field('image', 'category_'.$cat_id);
 								?>
 								<img src="<?=$cat_img_src?>">
+							<!-- Check single post -->
+							<? elseif(is_single()): ?>
+								<img src="<? bloginfo('template_url');?>/images/slides/insights_inner_slide.jpg">
 							<? else: ?>
 								<!-- Page image -->
 								<?=get_the_post_thumbnail();?>

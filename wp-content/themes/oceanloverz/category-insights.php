@@ -17,13 +17,18 @@
                 <?while($recent->have_posts()) : $recent->the_post();?>
                     <? $date = get_the_date('n F Y');
                         $excerpt = get_the_excerpt();
+                        $preview = get_field('preview');
                     ?>
                     <li class="insights__item clearfix">
-                        <? the_post_thumbnail();?>
+                        <div class="insights__image__container">
+                            <? the_post_thumbnail();?>
+                        </div>
                         <div class="insights__block">
                             <div class="insights__block__wrapper">
                                 <h3 class="insights__title"><?php the_title(); ?></h3>
-                                <div class="insights__preview">Leaf Collection is now available.</div>
+                                <?php if ($preview): ?>
+                                    <div class="insights__preview"><?=$preview?></div>
+                                <?php endif ?>
                                 <a href="<?php the_permalink()?>" class="insights__more btn btn-blue">read more</a>
                             </div>
                         </div>

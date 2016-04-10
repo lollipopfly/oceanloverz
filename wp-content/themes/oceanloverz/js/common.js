@@ -18,7 +18,7 @@ $(document).ready(function() {
 		dots: false,
 		speed: 800,
 		infinite: true,
-		slidesToShow: 3,
+		slidesToShow: 2,
 		slidesToScroll: 1,
 		variableWidth: true,
 		centerMode: true,

@@ -1,20 +1,33 @@
 <? get_header();?>
-			<!-- begin slider  -->
-			<div class="slider">
-				<ul class="slider-list">
-					<li class="slider__item">
-						<img src="<?php bloginfo('template_url');?>/images/slides/slide.jpg" alt="slide1">
-					</li>
-					<li class="slider__item">
-						<img src="<?php bloginfo('template_url');?>/images/slides/slide2.jpg" alt="slide2">
-					</li>
-				</ul>
-				<a href="/products/" class="btn slider__shop">
-					<span class="busket-white"></span>
-					shop now
-				</a>
-			</div>
-			<!-- end slider -->
+			<?
+			    $cat = get_the_category();
+			    $cat_name = 'home_slider';
+			    $n = 10;   // post quanity
+			    $args = array(
+			        'category_name' => $cat_name,
+			        'post_type' => 'post',
+			        'posts_per_page' => $n,
+			    );
+			    $home_slider = new WP_Query($args);
+			?>
+
+		    <? if($home_slider):?>
+				<!-- begin slider  -->
+				<div class="slider">
+					<ul class="slider-list">
+						<?while($home_slider->have_posts()) : $home_slider->the_post();?>
+							<li class="slider__item">
+								<? the_post_thumbnail();?>
+							</li>
+						<?php endwhile; ?>
+					</ul>
+					<a href="/products/" class="btn slider__shop">
+						<span class="busket-white"></span>
+						shop now
+					</a>
+				</div>
+				<!-- end slider -->
+            <? endif;?>
 
 			<!-- begin home  -->
 			<div class="home">

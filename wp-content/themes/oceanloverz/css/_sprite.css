@@ -16,21 +16,33 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.arr_next {
+  background-image: url(../images/sprite.png);
+  background-position: -26px 0px;
+  width: 10px;
+  height: 10px;
+}
+.arr_prev {
+  background-image: url(../images/sprite.png);
+  background-position: -37px 0px;
+  width: 10px;
+  height: 10px;
+}
 .basket-social {
   background-image: url(../images/sprite.png);
-  background-position: -125px 0px;
+  background-position: -136px 0px;
   width: 17px;
   height: 11px;
 }
 .busket-white {
   background-image: url(../images/sprite.png);
-  background-position: -143px 0px;
+  background-position: -154px 0px;
   width: 20px;
   height: 13px;
 }
 .email {
   background-image: url(../images/sprite.png);
-  background-position: -77px 0px;
+  background-position: -88px 0px;
   width: 14px;
   height: 11px;
 }
@@ -46,33 +58,27 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 8px;
   height: 14px;
 }
-.header-top-arr {
-  background-image: url(../images/sprite.png);
-  background-position: -26px 0px;
-  width: 10px;
-  height: 10px;
-}
 .instagram {
   background-image: url(../images/sprite.png);
-  background-position: -37px 0px;
+  background-position: -48px 0px;
   width: 11px;
   height: 11px;
 }
 .instagram_red {
   background-image: url(../images/sprite.png);
-  background-position: -92px 0px;
+  background-position: -103px 0px;
   width: 15px;
   height: 14px;
 }
 .location {
   background-image: url(../images/sprite.png);
-  background-position: -63px 0px;
+  background-position: -60px 0px;
   width: 13px;
   height: 18px;
 }
 .logo {
   background-image: url(../images/sprite.png);
-  background-position: -164px 0px;
+  background-position: -175px 0px;
   width: 204px;
   height: 55px;
 }
@@ -84,13 +90,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .twitter {
   background-image: url(../images/sprite.png);
-  background-position: -49px 0px;
+  background-position: -74px 0px;
   width: 13px;
   height: 11px;
 }
 .twitter_red {
   background-image: url(../images/sprite.png);
-  background-position: -108px 0px;
+  background-position: -119px 0px;
   width: 16px;
   height: 13px;
 }

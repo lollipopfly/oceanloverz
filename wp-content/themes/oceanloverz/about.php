@@ -18,16 +18,28 @@
 
 	<h2 class="page__title page__title-purple">Who is behind Oceanloverz</h2>
 
-	<div class="about-carousel">
-		<div class="about-carousel__item">
-			<img src="<? bloginfo('template_url');?>/images/slides/about_slides/slide1.jpg"></div>
-		<div class="about-carousel__item">
-			<img src="<? bloginfo('template_url');?>/images/slides/about_slides/slide2.jpg"></div>
-		<div class="about-carousel__item">
-			<img src="<? bloginfo('template_url');?>/images/slides/about_slides/slide3.jpg"></div>
-		<div class="about-carousel__item">
-			<img src="<? bloginfo('template_url');?>/images/slides/about_slides/slide2.jpg"></div>
-	</div>
+
+	<?
+		$cat = get_the_category();
+		$cat_name = 'about_carousel';
+		$n = 10;   // post quanity
+		$args = array(
+			'category_name' => $cat_name,
+			'post_type' => 'post',
+			'posts_per_page' => $n,
+		);
+	    $about_carousel = new WP_Query($args);
+	?>
+
+	<? if($about_carousel):?>
+		<div class="about-carousel">
+			<?while($about_carousel->have_posts()) : $about_carousel->the_post();?>
+				<div class="about-carousel__item">
+					<? the_post_thumbnail();?>
+				</div>
+			<?php endwhile; ?>
+		</div>
+	<? endif;?>
 
 	<p>Franziska Iseli is a lover of all things salty, mad adventurer and philanthropic entrepreneur.</p>
 
