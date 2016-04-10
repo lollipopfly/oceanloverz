@@ -10,7 +10,7 @@
 	<!--[if lt IE 9]>
 		<script src="<?php bloginfo('template_url');?>/js/libs/html5shiv.min.js"></script>
 	<![endif]-->
-	<? wp_head;?>
+	<? wp_head();?>
 </head>
 <body>
 	<!-- begin wrap  -->
@@ -47,10 +47,18 @@
 
 						<div class="social">
 							<ul>
-								<li class="social__item"><a href="#" class="social__link"><span class="facebook"></span></a></li>
-								<li class="social__item"><a href="#" class="social__link"><span class="instagram"></span></a></li>
-								<li class="social__item"><a href="#" class="social__link"><span class="twitter"></span></a></li>
-								<li class="social__item"><a href="#" class="social__link"><span class="basket-social"></span></a></li>
+								<li class="social__item">
+									<a href="<?=get_field('facebook_link', 'user_1');?>" target="_blank" class="social__link"><span class="facebook"></span></a>
+								</li>
+								<li class="social__item">
+									<a href="<?=get_field('instagram_link', 'user_1');?>" target="_blank" class="social__link"><span class="instagram"></span></a>
+								</li>
+								<li class="social__item">
+									<a href="<?=get_field('twitter_link', 'user_1');?>" target="_blank" class="social__link"><span class="twitter"></span></a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link"><span class="basket-social"></span></a>
+								</li>
 							</ul>
 							<!-- /.social -->
 						</div>
@@ -62,14 +70,24 @@
 
 		<!-- begin main  -->
 		<div class="main">
-
 			<!-- PAGE TEMPLATE -->
 			<? if(!is_home()): ?>
 				<!-- begin page  -->
 				<div class="page">
-					<? if (get_the_post_thumbnail()): ?>
+					<? if (get_the_post_thumbnail() || is_category()): ?>
 						<div class="slide-container">
-							<?=get_the_post_thumbnail();?>
+							<!-- Check category page (insights) -->
+							<? if (is_category()): ?>
+								<?
+									$cat = get_the_category();
+									$cat_id = $cat[0]->cat_ID;
+									$cat_img_src = get_field('image', 'category_'.$cat_id);
+								?>
+								<img src="<?=$cat_img_src?>">
+							<? else: ?>
+								<!-- Page image -->
+								<?=get_the_post_thumbnail();?>
+							<? endif ?>
 							<a href="/products/" class="btn slider__shop">
 								<span class="busket-white"></span>
 								shop now

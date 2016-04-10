@@ -26,7 +26,7 @@
 		<div class="about-carousel__item">
 			<img src="<? bloginfo('template_url');?>/images/slides/about_slides/slide3.jpg"></div>
 		<div class="about-carousel__item">
-			<img src="<? bloginfo('template_url');?>/images/slides/about_slides/slide1.jpg"></div>
+			<img src="<? bloginfo('template_url');?>/images/slides/about_slides/slide2.jpg"></div>
 	</div>
 
 	<p>Franziska Iseli is a lover of all things salty, mad adventurer and philanthropic entrepreneur.</p>
