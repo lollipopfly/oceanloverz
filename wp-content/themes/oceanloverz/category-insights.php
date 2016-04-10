@@ -36,5 +36,11 @@
                 <?php endwhile; ?>
             </ul>
         <? endif;?>
-    <? //wp_pagenavi( array( 'query' => $recent ));?>
+
+        <?php if ($recent->max_num_pages > 1): ?>
+            <div class="pagination">
+                <span class="pagination__prev"><? previous_posts_link( 'Newer posts' );?></span>
+                <span class="pagination__next"><? next_posts_link( 'Older posts', $recent->max_num_pages );?></span>
+            </div>
+        <?php endif ?>
 <? get_footer();?>

@@ -13,8 +13,8 @@
         </div>
     <? endwhile; endif; ?>
 
-        <div class="single__pagination">
-            <? previous_post_link('<span class="single__pagination__prev">%link</span>', 'prev bLog post', TRUE);?>
-            <? next_post_link( '<span class="single__pagination__next">%link</span>', 'next bLog post', TRUE ); ?>
+    <div class="pagination">
+            <? previous_post_link('<span class="pagination__prev">%link</span>', 'prev bLog post', TRUE);?>
+            <? next_post_link( '<span class="pagination__next">%link</span>', 'next bLog post', TRUE ); ?>
         </div>
 <? get_footer();?>

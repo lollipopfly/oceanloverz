@@ -467,6 +467,10 @@
 /*------------------------------------*\
     INSIGHTS
 \*------------------------------------*/
+.insights {
+	margin-bottom: 35px;
+}
+
 .insights__item {
 	position: relative;
 	margin-bottom: 8px;
@@ -694,51 +698,52 @@
 	line-height: 24px;
 }
 
-.single__pagination__next,
-.single__pagination__prev {
-	position: relative;
+.pagination__next,
+.pagination__prev {
 	display: inline-block;
 
-	&:after {
-		content: '';
-		display: inline-block;
-		position: absolute;
-		top: 50%;
-		margin-top: -6px;
-	}
-
 	a {
+		position: relative;
 		color: $white;
 		display: inline-block;
 		background: #7089a3;
 		text-transform: uppercase;
 		font-size: 14px;
+
+		&:after {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: 50%;
+			margin-top: -6px;
+		}
 	}
 }
 
-.single__pagination__next {
+.pagination__next {
 	float: right;
-
-	&:after {
-		@extend .arr_next;
-		right: 18px;
-	}
 
 	a {
 		padding: 13px 35px 13px 21px;
+
+		&:after {
+			@extend .arr_next;
+			right: 18px;
+		}
 	}
 }
 
-.single__pagination__prev {
+.pagination__prev {
 	float: left;
 
-	&:after {
-		@extend .arr_prev;
-		left: 18px;
-	}
 
 	a {
 		padding: 13px 21px 13px 35px;
+
+		&:after {
+			@extend .arr_prev;
+			left: 18px;
+		}
 	}
 }
 
@@ -1019,12 +1024,12 @@
 	/*------------------------------------*\
 	    SINGLE
 	\*------------------------------------*/
-	.single__pagination__prev,
-	.single__pagination__next {
+	.pagination__prev,
+	.pagination__next {
 		float: none;
 	}
 
-	.single__pagination__prev {
+	.pagination__prev {
 		margin-bottom: 20px;
 	}
 }
