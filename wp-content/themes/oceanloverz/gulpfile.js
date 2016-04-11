@@ -33,7 +33,6 @@ gulp.task('sass', function() {
 		  'sass/_main.scss',
 		  'css/_sprite.css',
 		  'node_modules/slick-carousel/slick/slick.css',
-		  'node_modules/slick-carousel/slick/slick-theme.css',
 		  'sass/style.scss',])
 	.pipe(concat('style.css'))
 	.pipe(sass().on('error', error))

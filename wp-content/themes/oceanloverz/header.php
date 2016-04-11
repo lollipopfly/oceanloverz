@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="">
+<html lang="en">
 <head>
 	<title><?=wp_title();?></title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/node_modules/slick-carousel/slick/slick-theme.css" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/style.css" />
 
 	<!--[if lt IE 9]>
@@ -57,7 +58,7 @@
 									<a href="<?=get_field('twitter_link', 'user_1');?>" target="_blank" class="social__link"><span class="twitter"></span></a>
 								</li>
 								<li class="social__item">
-									<a href="#" class="social__link"><span class="basket-social"></span></a>
+									<a href="/products/" class="social__link"><span class="basket-social"></span></a>
 								</li>
 							</ul>
 							<!-- /.social -->

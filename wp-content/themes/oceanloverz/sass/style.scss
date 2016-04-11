@@ -25,6 +25,8 @@
 
 	.arr_next {
 		display: inline-block;
+		position: relative;
+		top: 1px;
 	}
 }
 
@@ -66,10 +68,6 @@
 	&:--hoverous {
 		color: $blue;
 	}
-}
-
-.current-menu-item a {
-	color: $blue !important;
 }
 
 .burger {
@@ -429,7 +427,7 @@
 }
 
 .page__title {
-	font-size: 48px;
+	font-size: 49px;
 	font-family: $have_heart;
 	text-align: center;
 	width: 62%;
@@ -450,6 +448,57 @@
 
 .page__title-red-light {
 	color: $red_light;
+}
+.page__title-orange {
+	color: $orange;
+}
+
+/*------------------------------------*\
+    ADVENTURES SLIDER
+\*------------------------------------*/
+.adventures-slider {
+	margin-bottom: 12px;
+
+	.slick-prev,
+	.slick-next {
+		display: inline-block !important;
+
+		&:before {
+			content: '';
+		}
+	}
+
+	.slick-prev {
+		@extend .carousel_arr_prev;
+		left: -50px;
+		&:--hoverous {
+			@extend .carousel_arr_prev;
+		}
+	}
+
+	.slick-next {
+		@extend .carousel_arr_next;
+		right: -50px;
+
+		&:--hoverous {
+			@extend .carousel_arr_next;
+		}
+	}
+}
+
+.adventures-thumbnail__list {
+	overflow: hidden;
+}
+
+.adventures-thumbnail__item {
+	width: 32%;
+	float: left;
+	margin-right: 2%;
+	outline: none;
+
+	&:last-child {
+		margin-right: 0;
+	}
 }
 
 /*------------------------------------*\
@@ -550,7 +599,7 @@
 
 	.slick-next,
 	.slick-prev {
-		display: block !important;
+		display: inline-block !important;
 		width: 20px;
 		height: 19px;
 		z-index: 1;
@@ -562,12 +611,20 @@
 
 	.slick-next {
 		right: 107px;
-		background: url(../images/carousel_arr_next.png) no-repeat;
+		@extend .carousel_arr_next;
+
+		&:--hoverous {
+			@extend .carousel_arr_next;
+		}
 	}
 
 	.slick-prev {
 		left: 107px;
-		background: url(../images/carousel_arr_prev.png) no-repeat;
+		@extend .carousel_arr_prev;
+
+		&:--hoverous {
+			@extend .carousel_arr_prev;
+		}
 	}
 }
 
@@ -782,6 +839,18 @@
 	}
 
 	/*------------------------------------*\
+	    INSIGHTS
+	\*------------------------------------*/
+	.insights__title {
+		padding: 12px 10px;
+		font-size: 16px;
+	}
+
+	.insights__preview {
+		margin-bottom: 20px;
+	}
+
+	/*------------------------------------*\
 	    CONTACT PAGE
 	\*------------------------------------*/
 	.contact-page {
@@ -800,6 +869,23 @@
 	.home-subscribe .home-box-inner h2 {
 		font-size: 16px !important;
 	}
+
+	/*------------------------------------*\
+	    Adventures
+	\*------------------------------------*/
+	.adventures-slider {
+		width: 85%;
+		margin: 0 auto 20px;
+
+		.slick-prev {
+			left: -25px;
+		}
+
+		.slick-next {
+			right: -25px;
+		}
+	}
+
 }
 
 @media screen and (max-width: 780px) {
@@ -906,11 +992,6 @@
 
 	.insights__preview {
 		margin-bottom: 15px;
-	}
-
-	.insights__title {
-		padding: 14px 10px;
-		font-size: 18px;
 	}
 }
 

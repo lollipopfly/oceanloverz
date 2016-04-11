@@ -18,7 +18,6 @@
 
 	<h2 class="page__title page__title-purple">Who is behind Oceanloverz</h2>
 
-
 	<?
 		$cat = get_the_category();
 		$cat_name = 'about_carousel';

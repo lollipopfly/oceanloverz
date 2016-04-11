@@ -34,9 +34,9 @@
 				<div class="home-top">
 					<div class="home-inst home-box">
 						<div class="home-box-inner">
-							<a href="#" class="btn btn-redlight">Join us on Instagram!</a>
+							<a href="<?=get_field('instagram_link', 'user_1')?>" target="_blank" class="btn btn-redlight">Join us on Instagram!</a>
 							<div class="clearfix"></div>
-							<a class="btn btn-redlight" href="#">follow us</a>
+							<a class="btn btn-redlight" href="<?=get_field('instagram_link', 'user_1')?>" target="_blank">follow us</a>
 						</div>
 					</div>
 					<!-- /.home-inst -->

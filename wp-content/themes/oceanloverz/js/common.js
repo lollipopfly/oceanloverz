@@ -13,6 +13,13 @@ $(document).ready(function() {
 		autoplaySpeed: 7000,
 	});
 
+	// ADVENTURES SLICK SLIDER
+	$('.adventures-slider').slick({
+		dots: false,
+		speed: 800,
+		infinite: true,
+	});
+
 	// ABOUT SLICK CAROUSEL
 	$('.about-carousel').slick({
 		dots: false,

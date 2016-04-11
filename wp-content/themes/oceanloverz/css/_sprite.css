@@ -18,13 +18,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .arr_next {
   background-image: url(../images/sprite.png);
-  background-position: -26px 0px;
+  background-position: -37px 0px;
   width: 10px;
   height: 10px;
 }
 .arr_prev {
   background-image: url(../images/sprite.png);
-  background-position: -37px 0px;
+  background-position: -26px 0px;
   width: 10px;
   height: 10px;
 }
@@ -39,6 +39,18 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-position: -154px 0px;
   width: 20px;
   height: 13px;
+}
+.carousel_arr_next {
+  background-image: url(../images/sprite.png);
+  background-position: -175px 0px;
+  width: 20px;
+  height: 19px;
+}
+.carousel_arr_prev {
+  background-image: url(../images/sprite.png);
+  background-position: -196px 0px;
+  width: 20px;
+  height: 19px;
 }
 .email {
   background-image: url(../images/sprite.png);
@@ -72,13 +84,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .location {
   background-image: url(../images/sprite.png);
-  background-position: -60px 0px;
+  background-position: -74px 0px;
   width: 13px;
   height: 18px;
 }
 .logo {
   background-image: url(../images/sprite.png);
-  background-position: -175px 0px;
+  background-position: -217px 0px;
   width: 204px;
   height: 55px;
 }
@@ -90,7 +102,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .twitter {
   background-image: url(../images/sprite.png);
-  background-position: -74px 0px;
+  background-position: -60px 0px;
   width: 13px;
   height: 11px;
 }
