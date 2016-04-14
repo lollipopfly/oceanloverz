@@ -12,14 +12,16 @@
 		<script src="<?php bloginfo('template_url');?>/js/libs/html5shiv.min.js"></script>
 	<![endif]-->
 
-	<!-- ONTAPORT -->
-	<link rel="stylesheet" href="//app.ontraport.com/js/formeditor/moonrayform/paymentplandisplay/production.css" type="text/css" />
-	<link rel="stylesheet" href="//forms.ontraport.com/formeditor/formeditor/css/form.default.css" type="text/css" />
-	<link rel="stylesheet" href="//forms.ontraport.com/formeditor/formeditor/css/form.publish.css" type="text/css" />
-	<link rel="stylesheet" href="//forms.ontraport.com/v2.4/include/minify/?g=moonrayCSS" type="text/css" />
-	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" type="text/css" />
-	<link rel="stylesheet" href="//forms.ontraport.com/v2.4/include/formEditor/gencss.php?uid=p2c2385f183" type="text/css" />
-	<script type="text/javascript" src="//forms.ontraport.com/v2.4/include/formEditor/genjs-v3.php?html=false&uid=p2c2385f183"></script>
+	<? if (is_home()): ?>
+		<!-- ONTAPORT -->
+		<link rel="stylesheet" href="//app.ontraport.com/js/formeditor/moonrayform/paymentplandisplay/production.css" type="text/css" />
+		<link rel="stylesheet" href="//forms.ontraport.com/formeditor/formeditor/css/form.default.css" type="text/css" />
+		<link rel="stylesheet" href="//forms.ontraport.com/formeditor/formeditor/css/form.publish.css" type="text/css" />
+		<link rel="stylesheet" href="//forms.ontraport.com/v2.4/include/minify/?g=moonrayCSS" type="text/css" />
+		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" type="text/css" />
+		<link rel="stylesheet" href="//forms.ontraport.com/v2.4/include/formEditor/gencss.php?uid=p2c2385f183" type="text/css" />
+		<script type="text/javascript" src="//forms.ontraport.com/v2.4/include/formEditor/genjs-v3.php?html=false&uid=p2c2385f183"></script>
+	<?endif ?>
 
 	<? wp_head();?>
 </head>
