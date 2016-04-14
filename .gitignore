@@ -20,6 +20,6 @@ wp-content/upgrade/
 wp-content/wp-cache-config.php
 
 !/wp-content/plugins/akismet
-
+/wp-content/themes/oceanloverz/include/ontaport_subscribe.php
 /readme.html
 /license.txt

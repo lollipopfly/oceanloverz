@@ -326,6 +326,12 @@
 
 .subscribe-field-container {
 	margin-bottom: 32px;
+	overflow: hidden;
+}
+
+.moonray-form {
+	border: none !important;
+	background-color: initial !important;
 }
 
 // insights
