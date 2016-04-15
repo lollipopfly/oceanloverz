@@ -5,7 +5,7 @@
 	get_header();
 ?>
 	<h2 class="page__title page__title-green">
-		At Oceanloverz we are on a mission to
+		At Oceanlovers we are on a mission to
 		unite all loverz of the ocean, share the beauty of all
 		things salty and behold our beautiful ocean world.
 	</h2>
@@ -16,7 +16,7 @@
 		<?php endwhile; endif; ?>
 	</div>
 
-	<h2 class="page__title page__title-purple">Who is behind Oceanloverz</h2>
+	<h2 class="page__title page__title-purple">Who is behind Oceanlovers</h2>
 
 	<?
 		$cat = get_the_category();
