@@ -44,8 +44,8 @@
 					<div class="home-subscribe home-box">
 						<div class="home-box-inner">
 							<div class="subscribe-desc-container">
-								<h2>Join your fellow Oceanloverz and receive</h2>
-								<h2>a monthly inspiring Oceanloverz story:</h2>
+								<h2>Join your fellow Oceanlovers and receive</h2>
+								<h2>a monthly inspiring Oceanlovers story:</h2>
 							</div>
 							<!-- Ontaport Subscribe form -->
 							<? require(get_template_directory() . '/include/_ontaport_subscribe.php');?>

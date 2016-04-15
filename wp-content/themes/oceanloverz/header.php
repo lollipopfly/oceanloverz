@@ -31,7 +31,7 @@
 		<header class="header">
 			<!-- begin header-top  -->
 			<div class="header-top">
-				<a href="#" class="header-top__link">Join your fellow Oceanloverz and receive a monthly inspiring Oceanloverz story! <span class="arr_next"></span></a>
+				<a href="#" class="header-top__link">Join your fellow Oceanlovers and receive a monthly inspiring Oceanlovers story! <span class="arr_next"></span></a>
 			</div>
 			<!-- end header-top -->
 
