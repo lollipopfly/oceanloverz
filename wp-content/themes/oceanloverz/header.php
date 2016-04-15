@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/node_modules/slick-carousel/slick/slick-theme.css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/slick-theme.css" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/style.css" />
 
 	<!--[if lt IE 9]>
