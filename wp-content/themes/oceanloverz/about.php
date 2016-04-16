@@ -35,6 +35,7 @@
 			<?while($about_carousel->have_posts()) : $about_carousel->the_post();?>
 				<div class="about-carousel__item">
 					<? the_post_thumbnail();?>
+					<div class="about-carousel__item__overlay"></div>
 				</div>
 			<?php endwhile; ?>
 		</div>

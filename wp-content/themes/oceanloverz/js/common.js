@@ -29,6 +29,7 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		variableWidth: true,
 		centerMode: true,
+		focusOnSelect: true,
 		responsive: [
 		    {
 		      breakpoint: 1024,
@@ -124,12 +125,15 @@ $('.burger').on('click', function() {
 	}
 });
 
+/* About slider */
+$('.about-carousel__item.slick-current').prev().addClass('about-carousel__item--prev');
+$('.about-carousel__item.slick-current').next().addClass('about-carousel__item--next');
 
-/**
-***************************************************************
-* =FUNCTIONS
-***************************************************************
-**/
+$('.about-carousel').on('afterChange', function(event, slick, direction){
+	$('.about-carousel__item').removeClass('about-carousel__item--prev');
+	$('.about-carousel__item').removeClass('about-carousel__item--next');
 
-
+	$('.about-carousel__item.slick-current').prev().addClass('about-carousel__item--prev');
+	$('.about-carousel__item.slick-current').next().addClass('about-carousel__item--next');
+});
 });

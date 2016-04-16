@@ -635,7 +635,26 @@
 }
 
 .about-carousel__item {
+	position: relative;
 	outline: none;
+}
+
+.about-carousel__item__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all .3s;
+	opacity: 1;
+}
+
+.about-carousel__item--prev .about-carousel__item__overlay {
+	background: rgba(244,175,138, .3);
+}
+
+.about-carousel__item--next .about-carousel__item__overlay {
+	background: rgba(48,122,146, .3);
 }
 
 /*------------------------------------*\
